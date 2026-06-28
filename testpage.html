@@ -84,24 +84,30 @@ const targetSpots = [
 
 // ◆各地点のメッセージを記入 ※スタート地点、スポット１、スポット２・・・
 const spotMessages = [
-    'よお！ここが中宗岡だもぴ。さあ右へ行こう。',
-    '電柱についたよ。ヤマヤまではすぐだ。',
-    'ゴールもぴよ！お疲れ様です。'
+    'Chapter0 洞穴を覗く',
+    'Chapter1 灯台の風見鶏',
+    'Chapter2 かつて見たもの',
+    'Chapter3 遠く浮かぶ夕月',
+    'Chapter4 造花に込めて'
 ];
 
 // ◆目指す地点を記入 ※スポット１、スポット２・・・ゴールでしてほしいこと
 const mapName = [
-    '→ 電柱',
-    '→ ヤマヤ',
-    '→ 感想を送る'
+    '→ 江埼灯台',
+    '→ 北淡震災記念公園第二駐車場',
+    '→ 浦県民サンビーチ',
+    '→ 明石海峡公園ポプラの丘',
+    '→ Spotifyで振り返る'
 ];
 
 // ◆GoogleマップのURLを記入 ※スポット１、スポット２・・・アンケート
 // Googleマップ上を強引にクリックするとピンを作れるので共有からリンクをコピー
 const mapUrl = [
-    'https://maps.app.goo.gl/j44qAKxgCCPedRNW7',
-    'https://maps.app.goo.gl/ckMEm2JeEgVLWw3k6',
-    'https://forms.gle/ULDgqVcwsbZbDiVP6'
+    'https://maps.app.goo.gl/hjbAMXhFWtiHKxXj8?g_st=ic',
+    'https://maps.app.goo.gl/MWtKE3qSqWcpBHNS6?g_st=ic',
+    'https://maps.app.goo.gl/VqBxzgtQ2bhHMDT49?g_st=ic',
+    'https://maps.app.goo.gl/xpJc1i3m9Wt6pdTd9?g_st=ic',
+    'https://open.spotify.com/show/0ag7hGQIn8oMai5yYlyN3U'
 ];
 
 
@@ -231,10 +237,10 @@ function stopTour() {
     stopbgmBTN.style.display = 'inline';
 
 //◆ ツアー終了（リンク）メッセージを記入
-    statusText.innerText = 'ツアー制作：カグア！';
+    statusText.innerText = '男性声：MY COEIROINK　黒聡鵜月、女性声：MY COEIROINK　ろさちゃん、OP曲：NexTop（Losstime Life)、ED曲：不老不死（Losstime Life)、脚本：詠月吟夜';
 
 //◆ 画像下にも終了メッセージを記入
-    coordinatesText.innerText = 'ツアーを終了です！お疲れ様でした。';
+    coordinatesText.innerText = '羽根のある花の話。いかがでしたか？';
 
     navigator.geolocation.clearWatch(watchId);
     alerted = false;
