@@ -15,7 +15,7 @@
  supported by ChatGPT
  https://creevo-music.com/ -->
 
-<title>花火（音声AR版）</title>
+<title>葉も根もある花の話（音声AR版）</title>
 <!-- ◆ツアー名を記入 -->
 
 <link rel='stylesheet' href='./style.css' type='text/css' media='all' />
@@ -24,6 +24,8 @@
     <link rel="preload" href="./00.mp3" as="audio">
     <link rel="preload" href="./01.mp3" as="audio">
     <link rel="preload" href="./02.mp3" as="audio">
+ 　 <link rel="preload" href="./03.mp3" as="audio">
+ 　 <link rel="preload" href="./04.mp3" as="audio">
     <audio id="audioPlayer" preload="auto"></audio>
 
     <link rel="preload" href="./bgm0000.mp3" as="audio">
@@ -34,18 +36,18 @@
 
 </head>
 <body>
-<h1>もぴんとテスト散歩</h1><!-- ◆ H1タイトルを記入（15文字） -->
+<h1>葉も根もある花の話（音声AR版）</h1><!-- ◆ H1タイトルを記入（15文字） -->
 <div id="space">　</div>
 <button id="startTour" onclick="startTour()">ツアーを開始する</button>
 <button id="stopTour" onclick="stopTour()" style="display:none;">ツアーを終了</button>
 <p><button id="stopbgmBTN" onclick="stopBGM()" style="display:none;">BGMを止める</button></p>
-<p id="mess">スタート地点についたら、ツアーを開始してね！スマホを見るときは必ず立ち止まるモピよ。宗岡駅西口が集合場所ね。</p>
+<p id="mess">スタート地点についたら、ツアーを開始してください！スマホを見るときは必ず立ち止まってください。</p>
 <!-- ◆ 開始前の注意や概要を書くといいよ -->
 
-<p><a id="status" href="https://maps.app.goo.gl/svrnvTpTFceEa4C9A">→ スタート場所（中宗岡）</a></p><!-- ◆ スタート地点と◆そのGoogleマップURLを記入 -->
+<p><a id="status" href=" https://maps.app.goo.gl/MxAtBuXChbfBAL9z8?g_st=ic">→ スタート地点（岩楠神社）</a></p><!-- ◆ スタート地点と◆そのGoogleマップURLを記入 -->
 
 <p id="imageContainer"><img id="myImage" src="./tour.jpg" alt="ツアー" width="280" /></p>
-<p id="coordinates">目標地との距離の差分はここを見てね</p>
+<p id="coordinates">目標地との距離の差分はここを参考にしてください</p>
 
 <script>
 let watchId;
